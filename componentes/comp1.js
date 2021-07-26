@@ -1,17 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text } from 'react-native';
+import Estilos from '../estilos/estilos';
 
-export default function() {
+export default function(props) {
     return (
-        <Text style={estilos.txt1}>CFB 223 Cursos- Curso React-Native</Text>
+        <Text style={Estilos.textoCursos}>CFB Cursos- Curso de {props.curso}</Text>
     );
 }
-
-const estilos = StyleSheet.create({
-    txt1 : {
-        color: '#f00',
-        fontSize: 20
-
-    }
-}
-);
